@@ -4,10 +4,13 @@
     	<meta charset="UTF-8">
 	  	<title>Startup</title>
 	  	<link rel="stylesheet" type="text/css" href="css/main.css">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	  	<script type="text/javascript" src="js/main.js"></script>
 	  	<link href='http://fonts.googleapis.com/css?family=Exo:900' rel='stylesheet' type='text/css'>
  	</head>
- 	<body onload="startTime()">
+ 	<body onload="start()">
+ 		<div id="settings" class="fa fa-cog"></div>
  		<div class="main">
  			<div class="heading">
  				<div class="innerHeading">
@@ -15,5 +18,12 @@
  				</div>
  			</div>
  		</div>
+ 		<div class="modal">
+ 			<div id="menu">
+	 			<input type="text" id="textfield" />
+	 			<input type="button" value="save" onclick="save()">
+	 		</div>
+ 		</div>
  	</body>
 </html>
+
